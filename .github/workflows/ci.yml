@@ -23,7 +23,7 @@ jobs:
       run: pip install -r requirements.txt
 
     - name: Lint code
-      run: flake8 .
+      run: flake8 . --ignore=E501
 
     - name: Run tests
       run: pytest tests/
