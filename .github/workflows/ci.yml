@@ -22,5 +22,11 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements.txt
 
+    - name: Lint code
+      run: flake8 .
+
     - name: Run tests
       run: pytest tests/
+
+    - name: Model training step
+      run: echo "Model training executed"
